@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dhanvandhini S - Data Analyst Portfolio</title>
+
+<style>
+/* ---------- RESET ---------- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #0f0f14;
+  color: #f1f5f9;
+  line-height: 1.7;
+}
+
+section { padding: 5rem 0; }
+.container { width: 90%; max-width: 1100px; margin: auto; }
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  color: #1e90ff;
+}
+
+p { color: #d1d5db; }
+
+a {
+  text-decoration: none;
+  color: #f1f5f9;
+  transition: color 0.3s ease;
+}
+a:hover { color: #1e90ff; }
+
+/* ---------- NAVBAR ---------- */
+header {
+  position: sticky;
+  top: 0;
+  background: #111827;
+  border-bottom: 1px solid #1e90ff;
+  z-index: 1000;
+}
+
+nav {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #2563eb, #1e3a8a);
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  color: #ffffff;
+}
+
+.hero h3 {
+  margin-top: 0.8rem;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #e5e7eb;
+}
+
+.hero p {
+  margin-top: 1.2rem;
+  max-width: 650px;
+  margin-inline: auto;
+}
+
+/* ---------- ABOUT ---------- */
+.about {
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+}
+
+/* ---------- SKILLS ---------- */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: #1f2937;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(30,144,255,0.35);
+}
+
+.card h4 {
+  margin-bottom: 1rem;
+  color: #1e90ff;
+}
+
+.card ul { padding-left: 1.2rem; }
+.card li { margin-bottom: 0.6rem; }
+
+.progress {
+  background: #2d3748;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 0.4rem;
+}
+
+.progress div {
+  height: 10px;
+  background: #1e90ff;
+  width: 0;
+  transition: width 1.2s ease;
+}
+
+/* ---------- PROJECTS ---------- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+}
+
+.project-card {
+  position: relative;
+}
+
+.project-card span {
+  display: inline-block;
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+/* ---------- CONTACT ---------- */
+.contact {
+  text-align: center;
+}
+
+.social-links {
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background: #111827;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .hero h1 { font-size: 2.4rem; }
+  .hero h3 { font-size: 1.2rem; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+  <strong>Portfolio</strong>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Dhanvandhini S</h1>
+    <h3>Fresher Data Analyst</h3>
+    <p>
+      Entry-level data analyst with a strong foundation in Python, SQL, and data visualization,
+      focused on turning raw data into meaningful insights.
+    </p>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container about">
+    <h2>About Me</h2>
+    <p>
+      I am a motivated fresher data analyst with hands-on experience in data cleaning,
+      exploratory analysis, and dashboard creation. I enjoy solving problems using data
+      and continuously improving my analytical and technical skills.
+    </p>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+
+      <div class="card">
+        <h4>Technical Skills</h4>
+        <ul>
+          <li>Python <div class="progress"><div data-width="90%"></div></div></li>
+          <li>SQL <div class="progress"><div data-width="85%"></div></div></li>
+          <li>Excel <div class="progress"><div data-width="80%"></div></div></li>
+          <li>Statistics <div class="progress"><div data-width="75%"></div></div></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h4>Tools & Technologies</h4>
+        <ul>
+          <li>Power BI / Tableau</li>
+          <li>Pandas & NumPy</li>
+          <li>GitHub</li>
+          <li>VS Code</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h4>Soft Skills</h4>
+        <ul>
+          <li>Analytical Thinking</li>
+          <li>Problem Solving</li>
+          <li>Clear Communication</li>
+          <li>Attention to Detail</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+
+      <div class="card project-card">
+        <h4>Sales Data Analysis</h4>
+        <p>Identified sales trends and revenue patterns to support business decisions.</p>
+        <span>Python · Pandas · Excel</span>
+      </div>
+
+      <div class="card project-card">
+        <h4>Customer Insights Dashboard</h4>
+        <p>Designed interactive dashboards to visualize KPIs and customer behavior.</p>
+        <span>Power BI / Tableau</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="container" style="text-align:center;">
+    <h2>Education</h2>
+    <p>B.E. Computer Science<br>Anna University</p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container contact">
+    <h2>Contact</h2>
+    <p>Email: ds123@email.com</p>
+    <div class="social-links">
+      <a href="#">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Dhanvandhini. All Rights Reserved.</p>
+</footer>
+
+<script>
+/* Section fade-in */
+const sections = document.querySelectorAll("section");
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = 1;
+      entry.target.style.transform = "translateY(0)";
+    }
+  });
+}, { threshold: 0.15 });
+
+sections.forEach(section => {
+  section.style.opacity = 0;
+  section.style.transform = "translateY(25px)";
+  section.style.transition = "all 0.6s ease";
+  observer.observe(section);
+});
+
+/* Progress bars */
+window.addEventListener("load", () => {
+  document.querySelectorAll(".progress div").forEach(bar => {
+    bar.style.width = bar.dataset.width;
+  });
+});
+</script>
+
+</body>
+</html>
